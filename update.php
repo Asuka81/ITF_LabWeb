@@ -5,7 +5,7 @@ mysqli_real_connect($conn, 'it63070153.mysql.database.azure.com', 'it63070153@it
 $name=$_POST['Name'];
 $comment=$_POST['Comment'];
 $link=$_POST['Link'];
-$sql="UPDATE guestbook SET Name='$name',Comment='$comment',Link='$link' WHERE ID='$id'";
+$sql="UPDATE Guestbook SET Name='$name',Comment='$comment',Link='$link' WHERE ID='$id'";
 if (mysqli_query($conn, $sql)) {
     header("Location: show.php");
   } else {
