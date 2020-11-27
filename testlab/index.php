@@ -45,7 +45,7 @@
                         <td><?php echo $Result['height']; ?></td>
                         <td><?php echo $Result['bmi']; ?></td>
                         <td>
-                            <a href="delete.php?id=<?php echo $Result['id'];?>" class="btn btn-outline-danger" onclick="return confirm('Confirm data deletion?')">DELETE</a>
+                            <a href="delete.php?id=<?php echo $Result['id'];?>" class="btn btn-outline-danger" onclick="return confirm('ยืนยันการลบข้อมูลหรือไม่?')">ลบข้อมูล</a>
                         </td>
                     </tr>
                 </tbody>
