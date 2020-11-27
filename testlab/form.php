@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO datainsert (name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$bmi')";
     if (mysqli_query($conn, $sql)) {
         echo "กรอกข้อมูลเรียบร้อยแล้ว";
-        echo "<a href='index.php'>back to home page</a>";
+        echo "<a href='index.php'>กลับไปหน้าแรก</a>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
